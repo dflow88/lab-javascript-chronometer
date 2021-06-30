@@ -92,7 +92,6 @@ btnLeftElement.addEventListener('click', () => {
   if (btnLeftElement.innerHTML === 'START') {
     setStopBtn();
     setSplitBtn();
-
     printTime();
   } else if (btnLeftElement.innerHTML === 'STOP') {
     setStartBtn();

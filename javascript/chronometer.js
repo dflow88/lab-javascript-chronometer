@@ -1,6 +1,6 @@
 class Chronometer {
   constructor() {
-    this.currentTime = 0;
+    this.currentTime = 57;
     this.intervalId = null;
   }
   start() {
@@ -23,7 +23,7 @@ class Chronometer {
     if(this.currentTime < 6000) {
       return Math.floor(this.currentTime/100)
     } else {
-      return this.currentTime % 6000
+      return Math.floor((this.currentTime) % 6000/100) 
     }
   }
 
